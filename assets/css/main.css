@@ -6,6 +6,17 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.mobile-example {
+	width: 700px;
+	margin-bottom: 1em;
+}
+
+.mobile-responsive {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .tech, .intro {
 	display: flex;
 	flex-direction: column;
@@ -64,7 +75,10 @@
 	display: flex;
 	justify-content: flex-end;
 	background-color: #242943;
+}
 
+#three{
+	padding: 50px;
 }
 
 html, body, div, span, applet, object,
@@ -3074,6 +3088,7 @@ input, select, textarea {
 
 			.spotlights > section > .image {
 				width: 40%;
+
 			}
 
 			.spotlights > section > .content {
@@ -3407,9 +3422,9 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 600px) {
 
-			#header .logo span {
+			#header .logo .frontend-title {
 				display: none;
 			}
 
@@ -3431,6 +3446,17 @@ input, select, textarea {
 					right: 0;
 				}
 
+			#dark-mode-gif {
+				display: flex;
+				justify-content: center;
+				align-items: center; 
+				height: 200px;
+			}
+			.inner p {
+				display: flex;
+				font-size: 10px;
+				padding: 15px;
+			}
 		}
 
 /* Banner */
@@ -4010,3 +4036,17 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+
+/* My Media Queries */
+@media screen and (max-width: 600px) {
+	.intro p {
+		display: flex;
+		align-items: center;
+		margin: 0;
+	}
+	.mobile-example {
+		width: 400px;
+		margin-bottom: 1em;
+	}
+}
